@@ -1,12 +1,6 @@
 # Introduce myself
 
-嗨大家好，我是資工系大三廖威仲，這是我的DjangoClass的作業repo
+大家好，我是森林四的林宏益(Hirosi Lin)
+主要關切的議題在2D與3D的GIS和Javascript
 
----
-## Week1
-
-以下是我的heroku網站連結：https://weihelloworldtest.herokuapp.com/
-
-**新增了新的view** 
-
----
+這學期請多多指教
