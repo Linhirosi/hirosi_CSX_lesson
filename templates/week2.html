@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,24 @@
     <title>Week2-Homework</title>
     <link rel="stylesheet" , text="text/css" href="..\static\style.css" />
 </head>
+
 <body>
     <div class="title_bar">
         <a href="https://imgur.com/dq7kHkq"><img id="website_logo" src="https://i.imgur.com/dq7kHkq.jpg" title="source: imgur.com" /></a>
         <div id="title_text">全國最大的彈幕影片平台</div>
     </div>
     <div class="menu_bar">
+
+        {% for i in menutexts %}
+        <!--
         <div class="menu_text">首頁</div>
         <div class="menu_text">推薦影片</div>
         <div class="menu_text">最多觀看</div>
         <div class="menu_text">發燒影片</div>
         <div class="menu_text">尊榮會員</div>
+-->
+        <div>{{i}}</div>
+        {% endfor %}
     </div>
     <div class="frame">
         <div class="now_playing_box">
@@ -44,7 +52,7 @@
                 </li>
                 <li class="sidebar">
                     <div id="side_video_title">[Godjj實況精華]讓世界迎接GODJJ時代</div>
-                    <a href="https://imgur.com/O418bdh"><img id="side_video"src="https://i.imgur.com/O418bdh.jpg" title="source: imgur.com" /></a>
+                    <a href="https://imgur.com/O418bdh"><img id="side_video" src="https://i.imgur.com/O418bdh.jpg" title="source: imgur.com" /></a>
                 </li>
                 <li class="sidebar">
                     <div id="side_video_title">[GODJJ]這就是逍遙谷的作法-俠客風雲傳</div>
@@ -58,4 +66,5 @@
         </div>
     </div>
 </body>
+
 </html>

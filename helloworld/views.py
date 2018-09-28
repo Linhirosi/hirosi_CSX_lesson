@@ -6,4 +6,6 @@ from django.contrib.auth.models import User
 
 
 def index(request):
-	return render(request,"week2.html")
+	menutexts=["首頁(偽)","推薦影片(偽)","最多觀看(偽)","發燒影片(偽)","尊榮會員(偽)"]
+
+	return render(request,"week2.html",locals())
