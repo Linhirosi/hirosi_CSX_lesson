@@ -7,3 +7,7 @@
 
 ---
 這是我的heroku網址: https://hirosicsx.herokuapp.com/
+
+---
+新發現:
+W3: 要在 python manage.py下確定
