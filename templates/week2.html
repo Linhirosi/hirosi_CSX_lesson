@@ -38,7 +38,17 @@
                     <input type="submit" id="submit" value="送出">
                 </form>
             </div>
+
+            <div class="comment_list_box">
+                {% for msg in msgs %}
+                <div class="comment_msg">
+                    <span>{{msg.talker}}:</span> {{msg.comment}}
+                </div>
+                {% endfor %}
+            </div>
+
         </div>
+
         <div class="video_box">
             <ul style="width:100%">
                 <li id="side_title">影片清單</li>

@@ -78,6 +78,15 @@ body {
     margin: auto;
 }
 
+.comment_list_box {
+    width: 100%;
+    margin: auto
+}
+
+.comment_msg {
+    color: white;
+}
+
 .video_box {
     justify-content: center;
     color: white;
