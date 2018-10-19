@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week3-Homework</title>
     <link rel="stylesheet" , text="text/css" href="..\static\style.css" />
+    <script type="text/javascript" src="week2.js"></script>
 </head>
 
 <body>
@@ -32,19 +33,19 @@
             <div id="now_playing_title">NYKD-54</div>
             <a href="https://imgur.com/ZE10xS3"><img id="now_playing_video" src="https://i.imgur.com/ZE10xS3.jpg" title="source: imgur.com" /></a>
             <div class="comment_box ">
-                <form id="send-form">
-                    <input type="text" name="name" id="name" placeholder="暱稱">
-                    <input type="text" name="msg" id="msg" placeholder="給點彈幕吧？">
+                <form id="comment_box" method="GET" action="">
+                    <!--action:跳到url.py某頁面-->
+                    <input type="text" name="name" placeholder="暱稱">
+                    <input type="text" name="msg" placeholder="給點彈幕吧？">
                     <input type="submit" id="submit" value="送出">
                 </form>
             </div>
 
             <div class="comment_list_box">
-                {% for msg in msgs %}
                 <div class="comment_msg">
-                    <span>{{msg.talker}}:</span> {{msg.comment}}
+                    {% for i in msgs1 %}
+                    <span class="name">{{msg.user}}: </span><span>{{msg.message}}</span> {% endfor %}
                 </div>
-                {% endfor %}
             </div>
 
         </div>
